@@ -129,6 +129,7 @@ Partial Class MatchManage
         '
         'Code
         '
+        Me.Code.Enabled = False
         Me.Code.Location = New System.Drawing.Point(175, 99)
         Me.Code.Margin = New System.Windows.Forms.Padding(2)
         Me.Code.Name = "Code"

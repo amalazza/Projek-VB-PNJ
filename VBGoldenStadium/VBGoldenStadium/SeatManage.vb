@@ -1,6 +1,6 @@
 ﻿
 Imports MySql.Data.MySqlClient
-Public Class MatchManage
+Public Class SeatManage
     Dim MySqlConn As MySqlConnection
     Dim COMMAND As MySqlCommand
     Dim dbDataSet As New DataTable
@@ -9,7 +9,7 @@ Public Class MatchManage
 
     Private Sub Insert_Click(sender As Object, e As EventArgs) Handles Insert.Click
 
-        If Names.Text = "" Or datee.Text = "" Or time.Text = "" Or tournament.Text = "" Then
+        If matchid.Text = "" Or tribune_name.Text = "" Or gate.Text = "" Or capacity.Text = "" Or price.Text = "" Then
             MessageBox.Show("Please Fill All Field To Insert", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             MySqlConn = New MySqlConnection
@@ -20,10 +20,10 @@ Public Class MatchManage
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "insert into goldenstadium.match (matchh, datee, timee, tournament_name) values ('" & Names.Text & "','" & datee.Text & "','" & time.Text & "','" & tournament.Text & "')"
+                Query = "insert into goldenstadium.seat (matchid, tribune_name, gate, capacity, price) values ('" & matchid.Text & "','" & tribune_name.Text & "','" & gate.Text & "','" & capacity.Text & "','" & price.Text & "')"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
-                MessageBox.Show("Match Data Saved", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Seat Data Saved", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 MySqlConn.Close()
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -36,7 +36,7 @@ Public Class MatchManage
     End Sub
 
     Private Sub Update_Click(sender As Object, e As EventArgs) Handles Update.Click
-        If Names.Text = "" Or datee.Text = "" Or time.Text = "" Or tournament.Text = "" Then
+        If matchid.Text = "" Or tribune_name.Text = "" Or gate.Text = "" Or capacity.Text = "" Or price.Text = "" Then
             MessageBox.Show("Please Fill All Field To Update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             MySqlConn = New MySqlConnection
@@ -47,10 +47,10 @@ Public Class MatchManage
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "update goldenstadium.match Set matchh='" & Names.Text & "',datee='" & datee.Text & "',timee='" & time.Text & "',tournament_name='" & tournament.Text & "' where matchid='" & Code.Text & "'"
+                Query = "update goldenstadium.seat Set price='" & price.Text & "',tribune_name='" & tribune_name.Text & "',gate='" & gate.Text & "',capacity='" & capacity.Text & "' where matchid='" & matchid.Text & "'"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
-                MessageBox.Show("Match Data Updated", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Seat Data Updated", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 MySqlConn.Close()
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -81,7 +81,7 @@ Public Class MatchManage
         Try
             MySqlConn.Open()
             Dim Query As String
-            Query = "select * from goldenstadium.match"
+            Query = "select * from goldenstadium.seat"
             COMMAND = New MySqlCommand(Query, MySqlConn)
             SDA.SelectCommand = COMMAND
             SDA.Fill(dbDataSet)
@@ -103,11 +103,11 @@ Public Class MatchManage
             Dim row As DataGridViewRow
             row = Me.TableEmp.Rows(e.RowIndex)
 
-            Code.Text = row.Cells("matchid").Value.ToString
-            Names.Text = row.Cells("matchh").Value.ToString
-            datee.Text = row.Cells("datee").Value.ToString
-            time.Text = row.Cells("timee").Value.ToString
-            tournament.Text = row.Cells("tournament_name").Value.ToString
+            matchid.Text = row.Cells("matchid").Value.ToString
+            tribune_name.Text = row.Cells("tribune_name").Value.ToString
+            gate.Text = row.Cells("gate").Value.ToString
+            capacity.Text = row.Cells("capacity").Value.ToString
+            price.Text = row.Cells("price").Value.ToString
         End If
     End Sub
 
@@ -115,7 +115,7 @@ Public Class MatchManage
 
     Private Sub Search_TextChanged(sender As Object, e As EventArgs) Handles Search.TextChanged
         Dim DV As New DataView(dbDataSet)
-        DV.RowFilter = String.Format("matchh Like '%{0}%' OR datee Like '%{0}%' OR timee Like '%{0}%' OR tournament_name Like '%{0}%'", Search.Text)
+        DV.RowFilter = String.Format("tribune_name Like '%{0}%' OR gate Like '%{0}%' OR capacity Like '%{0}%' OR price Like '%{0}%'", Search.Text)
         TableEmp.DataSource = DV
     End Sub
 
@@ -124,5 +124,29 @@ Public Class MatchManage
         Me.Hide()
     End Sub
 
+    Private Sub Delete_Click(sender As Object, e As EventArgs) Handles Delete.Click
+        If matchid.Text = "" Then
+            MessageBox.Show("Please Fill Match Id To Delete", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            MySqlConn = New MySqlConnection
+            MySqlConn.ConnectionString =
+            "server=localhost;userid=root;database=goldenstadium"
+            Dim READER As MySqlDataReader
 
+            Try
+                MySqlConn.Open()
+                Dim Query As String
+                Query = "Delete from goldenstadium.seat where matchid='" & matchid.Text & "'"
+                COMMAND = New MySqlCommand(Query, MySqlConn)
+                READER = COMMAND.ExecuteReader
+                MessageBox.Show("Seat Data Deleted", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MySqlConn.Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            Finally
+                MySqlConn.Dispose()
+            End Try
+        End If
+        Load_Table()
+    End Sub
 End Class

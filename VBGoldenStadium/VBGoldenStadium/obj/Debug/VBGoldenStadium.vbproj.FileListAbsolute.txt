@@ -35,3 +35,23 @@ C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\New folder\VBGolde
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\New folder\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Transaction.resources
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\New folder\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.vbproj.GenerateResource.Cache
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\New folder\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.MatchManage.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\VBGoldenStadium.exe.config
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.exe
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.xml
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.pdb
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\VBGoldenStadium.exe
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\VBGoldenStadium.pdb
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\VBGoldenStadium.xml
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\Google.Protobuf.dll
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\MySql.Data.dll
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\Google.Protobuf.xml
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\bin\Debug\MySql.Data.xml
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.vbprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Admin.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Employee.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Form1.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.MatchManage.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Resources.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Transaction.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.vbproj.GenerateResource.Cache
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.SeatManage.resources

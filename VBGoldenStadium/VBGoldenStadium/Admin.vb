@@ -17,4 +17,9 @@
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Seat_Click(sender As Object, e As EventArgs) Handles Seat.Click
+        SeatManage.Show()
+        Me.Hide()
+    End Sub
 End Class
