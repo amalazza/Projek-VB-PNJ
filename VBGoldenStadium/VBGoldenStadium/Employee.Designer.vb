@@ -41,7 +41,7 @@ Partial Class Employee
         Me.Gender = New System.Windows.Forms.ComboBox()
         Me.Position = New System.Windows.Forms.ComboBox()
         Me.Names = New System.Windows.Forms.TextBox()
-        Me.Update = New System.Windows.Forms.Button()
+        Me.UpdateE = New System.Windows.Forms.Button()
         Me.Delete = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -81,7 +81,7 @@ Partial Class Employee
         'Id
         '
         Me.Id.Location = New System.Drawing.Point(314, 339)
-        Me.Id.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Id.Margin = New System.Windows.Forms.Padding(2)
         Me.Id.Name = "Id"
         Me.Id.Size = New System.Drawing.Size(162, 20)
         Me.Id.TabIndex = 2
@@ -89,7 +89,7 @@ Partial Class Employee
         'Address
         '
         Me.Address.Location = New System.Drawing.Point(314, 426)
-        Me.Address.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Address.Margin = New System.Windows.Forms.Padding(2)
         Me.Address.Name = "Address"
         Me.Address.Size = New System.Drawing.Size(162, 20)
         Me.Address.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class Employee
         'Phone
         '
         Me.Phone.Location = New System.Drawing.Point(314, 453)
-        Me.Phone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Phone.Margin = New System.Windows.Forms.Padding(2)
         Me.Phone.MaxLength = 16
         Me.Phone.Name = "Phone"
         Me.Phone.Size = New System.Drawing.Size(162, 20)
@@ -150,7 +150,7 @@ Partial Class Employee
         'Username
         '
         Me.Username.Location = New System.Drawing.Point(314, 546)
-        Me.Username.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Username.Margin = New System.Windows.Forms.Padding(2)
         Me.Username.MaxLength = 16
         Me.Username.Name = "Username"
         Me.Username.Size = New System.Drawing.Size(162, 20)
@@ -159,7 +159,7 @@ Partial Class Employee
         'Salary
         '
         Me.Salary.Location = New System.Drawing.Point(314, 513)
-        Me.Salary.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Salary.Margin = New System.Windows.Forms.Padding(2)
         Me.Salary.MaxLength = 11
         Me.Salary.Name = "Salary"
         Me.Salary.Size = New System.Drawing.Size(162, 20)
@@ -190,7 +190,7 @@ Partial Class Employee
         'Password
         '
         Me.Password.Location = New System.Drawing.Point(314, 575)
-        Me.Password.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Password.Margin = New System.Windows.Forms.Padding(2)
         Me.Password.MaxLength = 16
         Me.Password.Name = "Password"
         Me.Password.Size = New System.Drawing.Size(162, 20)
@@ -210,7 +210,7 @@ Partial Class Employee
         'Insert
         '
         Me.Insert.Location = New System.Drawing.Point(292, 620)
-        Me.Insert.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Insert.Margin = New System.Windows.Forms.Padding(2)
         Me.Insert.Name = "Insert"
         Me.Insert.Size = New System.Drawing.Size(82, 28)
         Me.Insert.TabIndex = 19
@@ -222,7 +222,7 @@ Partial Class Employee
         Me.Gender.FormattingEnabled = True
         Me.Gender.Items.AddRange(New Object() {"Male", "Female"})
         Me.Gender.Location = New System.Drawing.Point(314, 394)
-        Me.Gender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gender.Margin = New System.Windows.Forms.Padding(2)
         Me.Gender.Name = "Gender"
         Me.Gender.Size = New System.Drawing.Size(162, 21)
         Me.Gender.TabIndex = 20
@@ -233,7 +233,7 @@ Partial Class Employee
         Me.Position.FormattingEnabled = True
         Me.Position.Items.AddRange(New Object() {"Admin", "Employee"})
         Me.Position.Location = New System.Drawing.Point(314, 484)
-        Me.Position.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Position.Margin = New System.Windows.Forms.Padding(2)
         Me.Position.Name = "Position"
         Me.Position.Size = New System.Drawing.Size(162, 21)
         Me.Position.TabIndex = 21
@@ -242,26 +242,26 @@ Partial Class Employee
         'Names
         '
         Me.Names.Location = New System.Drawing.Point(314, 368)
-        Me.Names.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Names.Margin = New System.Windows.Forms.Padding(2)
         Me.Names.MaxLength = 50
         Me.Names.Name = "Names"
         Me.Names.Size = New System.Drawing.Size(162, 20)
         Me.Names.TabIndex = 22
         '
-        'Update
+        'UpdateE
         '
-        Me.Update.Location = New System.Drawing.Point(192, 620)
-        Me.Update.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Update.Name = "Update"
-        Me.Update.Size = New System.Drawing.Size(89, 28)
-        Me.Update.TabIndex = 23
-        Me.Update.Text = "Update"
-        Me.Update.UseVisualStyleBackColor = True
+        Me.UpdateE.Location = New System.Drawing.Point(192, 620)
+        Me.UpdateE.Margin = New System.Windows.Forms.Padding(2)
+        Me.UpdateE.Name = "UpdateE"
+        Me.UpdateE.Size = New System.Drawing.Size(89, 28)
+        Me.UpdateE.TabIndex = 23
+        Me.UpdateE.Text = "Update"
+        Me.UpdateE.UseVisualStyleBackColor = True
         '
         'Delete
         '
         Me.Delete.Location = New System.Drawing.Point(387, 620)
-        Me.Delete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Delete.Margin = New System.Windows.Forms.Padding(2)
         Me.Delete.Name = "Delete"
         Me.Delete.Size = New System.Drawing.Size(88, 28)
         Me.Delete.TabIndex = 24
@@ -285,7 +285,7 @@ Partial Class Employee
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Location = New System.Drawing.Point(0, -15)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(662, 98)
         Me.Panel1.TabIndex = 28
@@ -293,7 +293,7 @@ Partial Class Employee
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(28, 25)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(56, 55)
         Me.Button4.TabIndex = 33
@@ -304,7 +304,7 @@ Partial Class Employee
         '
         Me.TableEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TableEmp.Location = New System.Drawing.Point(63, 98)
-        Me.TableEmp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableEmp.Margin = New System.Windows.Forms.Padding(2)
         Me.TableEmp.Name = "TableEmp"
         Me.TableEmp.RowTemplate.Height = 24
         Me.TableEmp.Size = New System.Drawing.Size(540, 98)
@@ -313,7 +313,7 @@ Partial Class Employee
         'Search
         '
         Me.Search.Location = New System.Drawing.Point(314, 210)
-        Me.Search.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Search.Margin = New System.Windows.Forms.Padding(2)
         Me.Search.Name = "Search"
         Me.Search.Size = New System.Drawing.Size(162, 20)
         Me.Search.TabIndex = 30
@@ -333,7 +333,7 @@ Partial Class Employee
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Location = New System.Drawing.Point(139, 245)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(391, 412)
         Me.Panel2.TabIndex = 31
@@ -356,7 +356,7 @@ Partial Class Employee
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(651, 665)
         Me.Controls.Add(Me.Delete)
-        Me.Controls.Add(Me.Update)
+        Me.Controls.Add(Me.UpdateE)
         Me.Controls.Add(Me.Names)
         Me.Controls.Add(Me.Position)
         Me.Controls.Add(Me.Gender)
@@ -381,10 +381,11 @@ Partial Class Employee
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TableEmp)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "Employee"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Employee"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.TableEmp, System.ComponentModel.ISupportInitialize).EndInit()
@@ -414,7 +415,7 @@ Partial Class Employee
     Friend WithEvents Gender As ComboBox
     Friend WithEvents Position As ComboBox
     Friend WithEvents Names As TextBox
-    Friend WithEvents Update As Button
+    Friend WithEvents UpdateE As Button
     Friend WithEvents Delete As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Panel1 As Panel

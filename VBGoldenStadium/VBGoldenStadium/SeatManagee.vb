@@ -1,6 +1,6 @@
 ﻿
 Imports MySql.Data.MySqlClient
-Public Class SeatManage
+Public Class SeatManagee
     Dim MySqlConn As MySqlConnection
     Dim COMMAND As MySqlCommand
     Dim dbDataSet As New DataTable
@@ -111,9 +111,11 @@ Public Class SeatManage
         End If
     End Sub
 
-    Private Sub Searchh_TextChanged(sender As Object, e As EventArgs) Handles Searchh.TextChanged
+
+
+    Private Sub Search_TextChanged(sender As Object, e As EventArgs) Handles Search.TextChanged
         Dim DV As New DataView(dbDataSet)
-        DV.RowFilter = String.Format("matchid Like '%{0}%' OR tribune_name Like '%{0}%' OR gate Like '%{0}%' OR capacity Like '%{0}%'", Searchh.Text)
+        DV.RowFilter = String.Format("gate Like '%{0}%' OR capacity Like '%{0}%' OR price Like '%{0}%'", Search.Text)
         TableEmp.DataSource = DV
     End Sub
 

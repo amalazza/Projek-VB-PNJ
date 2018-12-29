@@ -25,7 +25,7 @@ Partial Class MatchManage
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Update = New System.Windows.Forms.Button()
+        Me.UpdateM = New System.Windows.Forms.Button()
         Me.Names = New System.Windows.Forms.TextBox()
         Me.Insert = New System.Windows.Forms.Button()
         Me.datee = New System.Windows.Forms.TextBox()
@@ -79,15 +79,15 @@ Partial Class MatchManage
         Me.Label11.TabIndex = 27
         Me.Label11.Text = "MATCH MANAGEMENT"
         '
-        'Update
+        'UpdateM
         '
-        Me.Update.Location = New System.Drawing.Point(109, 237)
-        Me.Update.Margin = New System.Windows.Forms.Padding(2)
-        Me.Update.Name = "Update"
-        Me.Update.Size = New System.Drawing.Size(89, 28)
-        Me.Update.TabIndex = 51
-        Me.Update.Text = "Update"
-        Me.Update.UseVisualStyleBackColor = True
+        Me.UpdateM.Location = New System.Drawing.Point(109, 237)
+        Me.UpdateM.Margin = New System.Windows.Forms.Padding(2)
+        Me.UpdateM.Name = "UpdateM"
+        Me.UpdateM.Size = New System.Drawing.Size(89, 28)
+        Me.UpdateM.TabIndex = 51
+        Me.UpdateM.Text = "Update"
+        Me.UpdateM.UseVisualStyleBackColor = True
         '
         'Names
         '
@@ -162,7 +162,7 @@ Partial Class MatchManage
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel2.Controls.Add(Me.Update)
+        Me.Panel2.Controls.Add(Me.UpdateM)
         Me.Panel2.Controls.Add(Me.tournament)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Insert)
@@ -292,7 +292,7 @@ Partial Class MatchManage
     Friend WithEvents datee As TextBox
     Friend WithEvents Insert As Button
     Friend WithEvents Names As TextBox
-    Friend WithEvents Update As Button
+    Friend WithEvents UpdateM As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Label12 As Label

@@ -52,7 +52,7 @@ Public Class Employee
 
 
 
-    Private Sub Update_Click(sender As Object, e As EventArgs) Handles Update.Click
+    Private Sub UpdateE_Click(sender As Object, e As EventArgs) Handles UpdateE.Click
         If Address.Text = "" Or Phone.Text = "" Or Position.Text = "" Or Salary.Text = "" Or Username.Text = "" Or Password.Text = "" Then
             MessageBox.Show("Please Fill All Field To Update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
@@ -148,7 +148,7 @@ Public Class Employee
     Private Sub TableEmp_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow
-            row = Me.TableEmp.Rows(e.RowIndex)
+            row = TableEmp.Rows(e.RowIndex)
 
             Id.Text = row.Cells("empid").Value.ToString
             Names.Text = row.Cells("name").Value.ToString
@@ -172,7 +172,7 @@ Public Class Employee
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Admin.Show()
-        Me.Hide()
+        Hide()
     End Sub
 
     Private Sub TableEmp_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellContentClick

@@ -23,7 +23,6 @@ Partial Class SeatManage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Search = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.matchid = New System.Windows.Forms.TextBox()
@@ -31,9 +30,10 @@ Partial Class SeatManage
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gate = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Delete = New System.Windows.Forms.Button()
         Me.price = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Update = New System.Windows.Forms.Button()
+        Me.UpdateS = New System.Windows.Forms.Button()
         Me.Insert = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.tribune_name = New System.Windows.Forms.TextBox()
@@ -42,7 +42,7 @@ Partial Class SeatManage
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Delete = New System.Windows.Forms.Button()
+        Me.Searchh = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.TableEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -58,14 +58,6 @@ Partial Class SeatManage
         Me.Label2.Size = New System.Drawing.Size(37, 13)
         Me.Label2.TabIndex = 58
         Me.Label2.Text = "Match"
-        '
-        'Search
-        '
-        Me.Search.Location = New System.Drawing.Point(314, 225)
-        Me.Search.Margin = New System.Windows.Forms.Padding(2)
-        Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(162, 20)
-        Me.Search.TabIndex = 63
         '
         'Label9
         '
@@ -130,7 +122,7 @@ Partial Class SeatManage
         Me.Panel2.Controls.Add(Me.Delete)
         Me.Panel2.Controls.Add(Me.price)
         Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.Update)
+        Me.Panel2.Controls.Add(Me.UpdateS)
         Me.Panel2.Controls.Add(Me.capacity)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Insert)
@@ -144,6 +136,16 @@ Partial Class SeatManage
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(386, 298)
         Me.Panel2.TabIndex = 64
+        '
+        'Delete
+        '
+        Me.Delete.Location = New System.Drawing.Point(71, 259)
+        Me.Delete.Margin = New System.Windows.Forms.Padding(2)
+        Me.Delete.Name = "Delete"
+        Me.Delete.Size = New System.Drawing.Size(89, 28)
+        Me.Delete.TabIndex = 54
+        Me.Delete.Text = "Delete"
+        Me.Delete.UseVisualStyleBackColor = True
         '
         'price
         '
@@ -164,15 +166,15 @@ Partial Class SeatManage
         Me.Label6.TabIndex = 52
         Me.Label6.Text = "Price"
         '
-        'Update
+        'UpdateS
         '
-        Me.Update.Location = New System.Drawing.Point(162, 259)
-        Me.Update.Margin = New System.Windows.Forms.Padding(2)
-        Me.Update.Name = "Update"
-        Me.Update.Size = New System.Drawing.Size(89, 28)
-        Me.Update.TabIndex = 51
-        Me.Update.Text = "Update"
-        Me.Update.UseVisualStyleBackColor = True
+        Me.UpdateS.Location = New System.Drawing.Point(162, 259)
+        Me.UpdateS.Margin = New System.Windows.Forms.Padding(2)
+        Me.UpdateS.Name = "UpdateS"
+        Me.UpdateS.Size = New System.Drawing.Size(89, 28)
+        Me.UpdateS.TabIndex = 51
+        Me.UpdateS.Text = "Update"
+        Me.UpdateS.UseVisualStyleBackColor = True
         '
         'Insert
         '
@@ -256,23 +258,20 @@ Partial Class SeatManage
         Me.Label11.TabIndex = 27
         Me.Label11.Text = "SEAT MANAGEMENT"
         '
-        'Delete
+        'Searchh
         '
-        Me.Delete.Location = New System.Drawing.Point(71, 259)
-        Me.Delete.Margin = New System.Windows.Forms.Padding(2)
-        Me.Delete.Name = "Delete"
-        Me.Delete.Size = New System.Drawing.Size(89, 28)
-        Me.Delete.TabIndex = 54
-        Me.Delete.Text = "Delete"
-        Me.Delete.UseVisualStyleBackColor = True
+        Me.Searchh.Location = New System.Drawing.Point(272, 226)
+        Me.Searchh.Name = "Searchh"
+        Me.Searchh.Size = New System.Drawing.Size(174, 20)
+        Me.Searchh.TabIndex = 65
         '
         'SeatManage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(651, 665)
+        Me.Controls.Add(Me.Searchh)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.matchid)
         Me.Controls.Add(Me.Panel2)
@@ -298,7 +297,7 @@ Partial Class SeatManage
     Friend WithEvents tribune_name As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Insert As Button
-    Friend WithEvents Update As Button
+    Friend WithEvents UpdateS As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents gate As TextBox
     Friend WithEvents Label5 As Label
@@ -306,9 +305,9 @@ Partial Class SeatManage
     Friend WithEvents matchid As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Search As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents price As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Delete As Button
+    Friend WithEvents Searchh As TextBox
 End Class

@@ -20,7 +20,7 @@ Public Class MatchManage
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "insert into goldenstadium.match (matchh, datee, timee, tournament_name) values ('" & Names.Text & "','" & datee.Text & "','" & time.Text & "','" & tournament.Text & "')"
+                Query = "insert into goldenstadium.matchhh (matchh, datee, timee, tournament_name) values ('" & Names.Text & "','" & datee.Text & "','" & time.Text & "','" & tournament.Text & "')"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
                 MessageBox.Show("Match Data Saved", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -35,7 +35,7 @@ Public Class MatchManage
 
     End Sub
 
-    Private Sub Update_Click(sender As Object, e As EventArgs) Handles Update.Click
+    Private Sub UpdateM_Click(sender As Object, e As EventArgs) Handles UpdateM.Click
         If Names.Text = "" Or datee.Text = "" Or time.Text = "" Or tournament.Text = "" Then
             MessageBox.Show("Please Fill All Field To Update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
@@ -47,7 +47,7 @@ Public Class MatchManage
             Try
                 MySqlConn.Open()
                 Dim Query As String
-                Query = "update goldenstadium.match Set matchh='" & Names.Text & "',datee='" & datee.Text & "',timee='" & time.Text & "',tournament_name='" & tournament.Text & "' where matchid='" & Code.Text & "'"
+                Query = "update goldenstadium.matchhh Set matchh='" & Names.Text & "',datee='" & datee.Text & "',timee='" & time.Text & "',tournament_name='" & tournament.Text & "' where matchid='" & Code.Text & "'"
                 COMMAND = New MySqlCommand(Query, MySqlConn)
                 READER = COMMAND.ExecuteReader
                 MessageBox.Show("Match Data Updated", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -81,7 +81,7 @@ Public Class MatchManage
         Try
             MySqlConn.Open()
             Dim Query As String
-            Query = "select * from goldenstadium.match"
+            Query = "select * from goldenstadium.matchhh"
             COMMAND = New MySqlCommand(Query, MySqlConn)
             SDA.SelectCommand = COMMAND
             SDA.Fill(dbDataSet)
@@ -101,7 +101,7 @@ Public Class MatchManage
     Private Sub TableEmp_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles TableEmp.CellClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow
-            row = Me.TableEmp.Rows(e.RowIndex)
+            row = TableEmp.Rows(e.RowIndex)
 
             Code.Text = row.Cells("matchid").Value.ToString
             Names.Text = row.Cells("matchh").Value.ToString
@@ -121,7 +121,7 @@ Public Class MatchManage
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Admin.Show()
-        Me.Hide()
+        Hide()
     End Sub
 
 

@@ -55,3 +55,4 @@ C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGo
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.Transaction.resources
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.vbproj.GenerateResource.Cache
 C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.SeatManage.resources
+C:\Users\LENOVO\Documents\KULIAH\SEMESTER 3\PNJ\OOP\Projek VB\Projek-VB-PNJ\VBGoldenStadium\VBGoldenStadium\obj\Debug\VBGoldenStadium.SeatManagee.resources

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 29, 2018 at 01:46 AM
+-- Generation Time: Dec 29, 2018 at 03:29 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -85,20 +85,16 @@ CREATE TABLE `seat` (
   `tribune_name` varchar(255) NOT NULL,
   `gate` varchar(255) NOT NULL,
   `capacity` int(11) NOT NULL,
-  `price` float NOT NULL,
-  `seatid` varchar(255) DEFAULT NULL
+  `price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `seat`
 --
 
-INSERT INTO `seat` (`matchid`, `tribune_name`, `gate`, `capacity`, `price`, `seatid`) VALUES
-(3, 'ke ', 'gate ', 10, 2000, NULL),
-(4, 'ke 4', 'gate 4', 100, 10000, NULL),
-(5, 'mmm', '8', 99, 999, NULL),
-(5, 'mmm', '8', 99, 999, NULL),
-(3, 'n', 'kk', 99, 99, NULL);
+INSERT INTO `seat` (`matchid`, `tribune_name`, `gate`, `capacity`, `price`) VALUES
+(1, 'hbdhc', 'hjsb', 10, 100),
+(5, 'hahaaa', 'west', 100, 1000);
 
 -- --------------------------------------------------------
 
@@ -111,18 +107,17 @@ CREATE TABLE `transac` (
   `empid` int(11) NOT NULL,
   `matchid` int(11) NOT NULL,
   `total_price` float NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `seat_no` int(11) NOT NULL
+  `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `transac`
 --
 
-INSERT INTO `transac` (`transacid`, `empid`, `matchid`, `total_price`, `quantity`, `seat_no`) VALUES
-(5, 28, 5, 100000, 10, 0),
-(6, 28, 1, 200000, 20, 0),
-(7, 28, 6, 200000, 20, 0);
+INSERT INTO `transac` (`transacid`, `empid`, `matchid`, `total_price`, `quantity`) VALUES
+(5, 28, 5, 100000, 10),
+(8, 1, 1, 100000, 10),
+(9, 1, 1, 200000, 20);
 
 --
 -- Indexes for dumped tables
@@ -144,7 +139,7 @@ ALTER TABLE `matchhh`
 -- Indexes for table `seat`
 --
 ALTER TABLE `seat`
-  ADD KEY `fk_match` (`matchid`);
+  ADD UNIQUE KEY `matchid` (`matchid`);
 
 --
 -- Indexes for table `transac`
@@ -174,7 +169,7 @@ ALTER TABLE `matchhh`
 -- AUTO_INCREMENT for table `transac`
 --
 ALTER TABLE `transac`
-  MODIFY `transacid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `transacid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
@@ -184,7 +179,7 @@ ALTER TABLE `transac`
 -- Constraints for table `seat`
 --
 ALTER TABLE `seat`
-  ADD CONSTRAINT `fk_match` FOREIGN KEY (`matchid`) REFERENCES `matchhh` (`matchid`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `seat_ibfk_1` FOREIGN KEY (`matchid`) REFERENCES `matchhh` (`matchid`);
 
 --
 -- Constraints for table `transac`

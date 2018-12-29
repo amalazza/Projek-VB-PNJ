@@ -50,13 +50,13 @@ Public Class Form1
                     If usertype = "Admin" Then
                         MessageBox.Show("Login Admin Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Admin.Show()
-                        Me.Hide()
+                        Hide()
                         TBUsername.Clear()
                         TBPassword.Clear()
                     Else
                         MessageBox.Show("Login Employee Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Transaction.Show()
-                        Me.Hide()
+                        Hide()
                         TBUsername.Clear()
                         TBPassword.Clear()
                     End If
