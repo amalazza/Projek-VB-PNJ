@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2018 at 05:23 PM
+-- Generation Time: Dec 29, 2018 at 01:46 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -52,10 +52,10 @@ INSERT INTO `employee` (`empid`, `name`, `gender`, `address`, `phonenumber`, `po
 -- --------------------------------------------------------
 
 --
--- Table structure for table `match`
+-- Table structure for table `matchhh`
 --
 
-CREATE TABLE `match` (
+CREATE TABLE `matchhh` (
   `matchid` int(11) NOT NULL,
   `matchh` varchar(255) NOT NULL,
   `datee` varchar(20) NOT NULL,
@@ -64,10 +64,10 @@ CREATE TABLE `match` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `match`
+-- Dumping data for table `matchhh`
 --
 
-INSERT INTO `match` (`matchid`, `matchh`, `datee`, `timee`, `tournament_name`) VALUES
+INSERT INTO `matchhh` (`matchid`, `matchh`, `datee`, `timee`, `tournament_name`) VALUES
 (1, 'PERSIJA vs PERSIPURA', '2018-12-05', '03:12:00', 'Itulahhhssss'),
 (3, 'PERSIJA vs PERSIPURA', '2018-12-05', '03:12:00', 'Itulahhh'),
 (4, 'PERSIJA vs hehe', '2018-12-05', '03:12:00', 'Itulahhhssss'),
@@ -86,16 +86,19 @@ CREATE TABLE `seat` (
   `gate` varchar(255) NOT NULL,
   `capacity` int(11) NOT NULL,
   `price` float NOT NULL,
-  `match_name` varchar(255) DEFAULT NULL
+  `seatid` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `seat`
 --
 
-INSERT INTO `seat` (`matchid`, `tribune_name`, `gate`, `capacity`, `price`, `match_name`) VALUES
+INSERT INTO `seat` (`matchid`, `tribune_name`, `gate`, `capacity`, `price`, `seatid`) VALUES
 (3, 'ke ', 'gate ', 10, 2000, NULL),
-(4, 'ke 4', 'gate 4', 100, 10000, NULL);
+(4, 'ke 4', 'gate 4', 100, 10000, NULL),
+(5, 'mmm', '8', 99, 999, NULL),
+(5, 'mmm', '8', 99, 999, NULL),
+(3, 'n', 'kk', 99, 99, NULL);
 
 -- --------------------------------------------------------
 
@@ -108,8 +111,18 @@ CREATE TABLE `transac` (
   `empid` int(11) NOT NULL,
   `matchid` int(11) NOT NULL,
   `total_price` float NOT NULL,
-  `quantity` int(11) NOT NULL
+  `quantity` int(11) NOT NULL,
+  `seat_no` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transac`
+--
+
+INSERT INTO `transac` (`transacid`, `empid`, `matchid`, `total_price`, `quantity`, `seat_no`) VALUES
+(5, 28, 5, 100000, 10, 0),
+(6, 28, 1, 200000, 20, 0),
+(7, 28, 6, 200000, 20, 0);
 
 --
 -- Indexes for dumped tables
@@ -122,9 +135,9 @@ ALTER TABLE `employee`
   ADD PRIMARY KEY (`empid`);
 
 --
--- Indexes for table `match`
+-- Indexes for table `matchhh`
 --
-ALTER TABLE `match`
+ALTER TABLE `matchhh`
   ADD PRIMARY KEY (`matchid`);
 
 --
@@ -152,16 +165,16 @@ ALTER TABLE `employee`
   MODIFY `empid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `match`
+-- AUTO_INCREMENT for table `matchhh`
 --
-ALTER TABLE `match`
+ALTER TABLE `matchhh`
   MODIFY `matchid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `transac`
 --
 ALTER TABLE `transac`
-  MODIFY `transacid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `transacid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
@@ -171,14 +184,14 @@ ALTER TABLE `transac`
 -- Constraints for table `seat`
 --
 ALTER TABLE `seat`
-  ADD CONSTRAINT `fk_match` FOREIGN KEY (`matchid`) REFERENCES `match` (`matchid`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_match` FOREIGN KEY (`matchid`) REFERENCES `matchhh` (`matchid`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `transac`
 --
 ALTER TABLE `transac`
   ADD CONSTRAINT `transac_ibfk_1` FOREIGN KEY (`empid`) REFERENCES `employee` (`empid`),
-  ADD CONSTRAINT `transac_ibfk_2` FOREIGN KEY (`matchid`) REFERENCES `match` (`matchid`);
+  ADD CONSTRAINT `transac_ibfk_2` FOREIGN KEY (`matchid`) REFERENCES `matchhh` (`matchid`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
