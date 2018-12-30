@@ -238,6 +238,7 @@ Partial Class MatchManage
         'TableEmp
         '
         Me.TableEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TableEmp.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TableEmp.Location = New System.Drawing.Point(57, 109)
         Me.TableEmp.Margin = New System.Windows.Forms.Padding(2)
         Me.TableEmp.Name = "TableEmp"

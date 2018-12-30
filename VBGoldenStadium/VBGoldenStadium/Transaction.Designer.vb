@@ -26,23 +26,23 @@ Partial Class Transaction
         Me.TableEmp = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.total_price = New System.Windows.Forms.TextBox()
+        Me.total_pricee = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.quantity = New System.Windows.Forms.TextBox()
+        Me.quantityy = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.e_name = New System.Windows.Forms.TextBox()
+        Me.e_namee = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.gate = New System.Windows.Forms.TextBox()
+        Me.gatee = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.tribune_name = New System.Windows.Forms.TextBox()
+        Me.tribune_namee = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.timee = New System.Windows.Forms.TextBox()
+        Me.timeee = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.datee = New System.Windows.Forms.TextBox()
+        Me.dateee = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.matchh = New System.Windows.Forms.TextBox()
+        Me.matchhh = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.transacidd = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -63,11 +63,12 @@ Partial Class Transaction
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(321, 37)
         Me.Label11.TabIndex = 27
-        Me.Label11.Text = "MATCH MANAGEMENT"
+        Me.Label11.Text = "TRANSACTION LIST"
         '
         'TableEmp
         '
         Me.TableEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TableEmp.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TableEmp.Location = New System.Drawing.Point(57, 107)
         Me.TableEmp.Margin = New System.Windows.Forms.Padding(2)
         Me.TableEmp.Name = "TableEmp"
@@ -96,13 +97,14 @@ Partial Class Transaction
         Me.Button4.Text = "Back"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'total_price
+        'total_pricee
         '
-        Me.total_price.Location = New System.Drawing.Point(184, 293)
-        Me.total_price.Margin = New System.Windows.Forms.Padding(2)
-        Me.total_price.Name = "total_price"
-        Me.total_price.Size = New System.Drawing.Size(162, 20)
-        Me.total_price.TabIndex = 51
+        Me.total_pricee.Enabled = False
+        Me.total_pricee.Location = New System.Drawing.Point(184, 293)
+        Me.total_pricee.Margin = New System.Windows.Forms.Padding(2)
+        Me.total_pricee.Name = "total_pricee"
+        Me.total_pricee.Size = New System.Drawing.Size(162, 20)
+        Me.total_pricee.TabIndex = 51
         '
         'Label10
         '
@@ -115,33 +117,34 @@ Partial Class Transaction
         Me.Label10.TabIndex = 50
         Me.Label10.Text = "Total Price"
         '
-        'quantity
+        'quantityy
         '
-        Me.quantity.Location = New System.Drawing.Point(184, 269)
-        Me.quantity.Margin = New System.Windows.Forms.Padding(2)
-        Me.quantity.Name = "quantity"
-        Me.quantity.Size = New System.Drawing.Size(162, 20)
-        Me.quantity.TabIndex = 49
+        Me.quantityy.Enabled = False
+        Me.quantityy.Location = New System.Drawing.Point(184, 269)
+        Me.quantityy.Margin = New System.Windows.Forms.Padding(2)
+        Me.quantityy.Name = "quantityy"
+        Me.quantityy.Size = New System.Drawing.Size(162, 20)
+        Me.quantityy.TabIndex = 49
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel2.Controls.Add(Me.e_name)
+        Me.Panel2.Controls.Add(Me.e_namee)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.total_price)
+        Me.Panel2.Controls.Add(Me.total_pricee)
         Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.quantity)
+        Me.Panel2.Controls.Add(Me.quantityy)
         Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.gate)
+        Me.Panel2.Controls.Add(Me.gatee)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.tribune_name)
+        Me.Panel2.Controls.Add(Me.tribune_namee)
         Me.Panel2.Controls.Add(Me.Label8)
-        Me.Panel2.Controls.Add(Me.timee)
+        Me.Panel2.Controls.Add(Me.timeee)
         Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.datee)
+        Me.Panel2.Controls.Add(Me.dateee)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Controls.Add(Me.matchh)
+        Me.Panel2.Controls.Add(Me.matchhh)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.transacidd)
         Me.Panel2.Controls.Add(Me.Label2)
@@ -151,13 +154,14 @@ Partial Class Transaction
         Me.Panel2.Size = New System.Drawing.Size(398, 393)
         Me.Panel2.TabIndex = 71
         '
-        'e_name
+        'e_namee
         '
-        Me.e_name.Location = New System.Drawing.Point(182, 123)
-        Me.e_name.Margin = New System.Windows.Forms.Padding(2)
-        Me.e_name.Name = "e_name"
-        Me.e_name.Size = New System.Drawing.Size(162, 20)
-        Me.e_name.TabIndex = 53
+        Me.e_namee.Enabled = False
+        Me.e_namee.Location = New System.Drawing.Point(182, 123)
+        Me.e_namee.Margin = New System.Windows.Forms.Padding(2)
+        Me.e_namee.Name = "e_namee"
+        Me.e_namee.Size = New System.Drawing.Size(162, 20)
+        Me.e_namee.TabIndex = 53
         '
         'Label1
         '
@@ -181,13 +185,14 @@ Partial Class Transaction
         Me.Label6.TabIndex = 48
         Me.Label6.Text = "Quantity"
         '
-        'gate
+        'gatee
         '
-        Me.gate.Location = New System.Drawing.Point(183, 244)
-        Me.gate.Margin = New System.Windows.Forms.Padding(2)
-        Me.gate.Name = "gate"
-        Me.gate.Size = New System.Drawing.Size(162, 20)
-        Me.gate.TabIndex = 47
+        Me.gatee.Enabled = False
+        Me.gatee.Location = New System.Drawing.Point(183, 244)
+        Me.gatee.Margin = New System.Windows.Forms.Padding(2)
+        Me.gatee.Name = "gatee"
+        Me.gatee.Size = New System.Drawing.Size(162, 20)
+        Me.gatee.TabIndex = 47
         '
         'Label7
         '
@@ -200,13 +205,14 @@ Partial Class Transaction
         Me.Label7.TabIndex = 46
         Me.Label7.Text = "Gate"
         '
-        'tribune_name
+        'tribune_namee
         '
-        Me.tribune_name.Location = New System.Drawing.Point(183, 220)
-        Me.tribune_name.Margin = New System.Windows.Forms.Padding(2)
-        Me.tribune_name.Name = "tribune_name"
-        Me.tribune_name.Size = New System.Drawing.Size(162, 20)
-        Me.tribune_name.TabIndex = 45
+        Me.tribune_namee.Enabled = False
+        Me.tribune_namee.Location = New System.Drawing.Point(183, 220)
+        Me.tribune_namee.Margin = New System.Windows.Forms.Padding(2)
+        Me.tribune_namee.Name = "tribune_namee"
+        Me.tribune_namee.Size = New System.Drawing.Size(162, 20)
+        Me.tribune_namee.TabIndex = 45
         '
         'Label8
         '
@@ -219,13 +225,14 @@ Partial Class Transaction
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Tribune"
         '
-        'timee
+        'timeee
         '
-        Me.timee.Location = New System.Drawing.Point(183, 196)
-        Me.timee.Margin = New System.Windows.Forms.Padding(2)
-        Me.timee.Name = "timee"
-        Me.timee.Size = New System.Drawing.Size(162, 20)
-        Me.timee.TabIndex = 41
+        Me.timeee.Enabled = False
+        Me.timeee.Location = New System.Drawing.Point(183, 196)
+        Me.timeee.Margin = New System.Windows.Forms.Padding(2)
+        Me.timeee.Name = "timeee"
+        Me.timeee.Size = New System.Drawing.Size(162, 20)
+        Me.timeee.TabIndex = 41
         '
         'Label5
         '
@@ -238,13 +245,14 @@ Partial Class Transaction
         Me.Label5.TabIndex = 40
         Me.Label5.Text = "Time"
         '
-        'datee
+        'dateee
         '
-        Me.datee.Location = New System.Drawing.Point(182, 171)
-        Me.datee.Margin = New System.Windows.Forms.Padding(2)
-        Me.datee.Name = "datee"
-        Me.datee.Size = New System.Drawing.Size(162, 20)
-        Me.datee.TabIndex = 39
+        Me.dateee.Enabled = False
+        Me.dateee.Location = New System.Drawing.Point(182, 171)
+        Me.dateee.Margin = New System.Windows.Forms.Padding(2)
+        Me.dateee.Name = "dateee"
+        Me.dateee.Size = New System.Drawing.Size(162, 20)
+        Me.dateee.TabIndex = 39
         '
         'Label4
         '
@@ -261,20 +269,21 @@ Partial Class Transaction
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Lucida Sans Unicode", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(95, 29)
+        Me.Label12.Location = New System.Drawing.Point(37, 29)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(207, 34)
+        Me.Label12.Size = New System.Drawing.Size(327, 34)
         Me.Label12.TabIndex = 28
-        Me.Label12.Text = "MATCH DATA"
+        Me.Label12.Text = "TRANSACTION DETAIL"
         '
-        'matchh
+        'matchhh
         '
-        Me.matchh.Location = New System.Drawing.Point(182, 147)
-        Me.matchh.Margin = New System.Windows.Forms.Padding(2)
-        Me.matchh.Name = "matchh"
-        Me.matchh.Size = New System.Drawing.Size(162, 20)
-        Me.matchh.TabIndex = 37
+        Me.matchhh.Enabled = False
+        Me.matchhh.Location = New System.Drawing.Point(182, 147)
+        Me.matchhh.Margin = New System.Windows.Forms.Padding(2)
+        Me.matchhh.Name = "matchhh"
+        Me.matchhh.Size = New System.Drawing.Size(162, 20)
+        Me.matchhh.TabIndex = 37
         '
         'Label3
         '
@@ -367,21 +376,21 @@ Partial Class Transaction
     Friend WithEvents TableEmp As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button4 As Button
-    Friend WithEvents total_price As TextBox
+    Friend WithEvents total_pricee As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents quantity As TextBox
+    Friend WithEvents quantityy As TextBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label6 As Label
-    Friend WithEvents gate As TextBox
+    Friend WithEvents gatee As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents tribune_name As TextBox
+    Friend WithEvents tribune_namee As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents timee As TextBox
+    Friend WithEvents timeee As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents datee As TextBox
+    Friend WithEvents dateee As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents matchh As TextBox
+    Friend WithEvents matchhh As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents transacidd As TextBox
     Friend WithEvents Label2 As Label
@@ -389,6 +398,6 @@ Partial Class Transaction
     Friend WithEvents Search As TextBox
     Friend WithEvents Label13 As Label
 
-    Friend WithEvents e_name As TextBox
+    Friend WithEvents e_namee As TextBox
     Friend WithEvents Label1 As Label
 End Class
