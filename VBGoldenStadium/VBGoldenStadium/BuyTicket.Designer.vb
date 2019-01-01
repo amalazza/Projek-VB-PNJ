@@ -34,19 +34,19 @@ Partial Class BuyTicket
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtEmpId = New System.Windows.Forms.TextBox()
-        Me.txtDate = New System.Windows.Forms.TextBox()
         Me.txtTime = New System.Windows.Forms.TextBox()
         Me.txtGate = New System.Windows.Forms.TextBox()
         Me.txtQuantity = New System.Windows.Forms.TextBox()
         Me.txtTotPrice = New System.Windows.Forms.TextBox()
-        Me.lblHargaTiketSatuan = New System.Windows.Forms.Label()
-        Me.cboMatch = New System.Windows.Forms.ComboBox()
-        Me.cboTribune = New System.Windows.Forms.ComboBox()
         Me.btnCheck = New System.Windows.Forms.Button()
         Me.btnBuy = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblSeatLeft = New System.Windows.Forms.Label()
-        Me.txtMatch = New System.Windows.Forms.TextBox()
+        Me.cboDate = New System.Windows.Forms.ComboBox()
+        Me.cboMatch = New System.Windows.Forms.ComboBox()
+        Me.cboTribune = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblHargaTiketSatuan = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -103,7 +103,7 @@ Partial Class BuyTicket
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(27, 235)
+        Me.Label3.Location = New System.Drawing.Point(26, 210)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 13)
         Me.Label3.TabIndex = 58
@@ -112,7 +112,7 @@ Partial Class BuyTicket
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 277)
+        Me.Label4.Location = New System.Drawing.Point(26, 250)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 59
@@ -121,7 +121,7 @@ Partial Class BuyTicket
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(27, 317)
+        Me.Label5.Location = New System.Drawing.Point(27, 288)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(43, 13)
         Me.Label5.TabIndex = 60
@@ -130,7 +130,7 @@ Partial Class BuyTicket
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(27, 357)
+        Me.Label6.Location = New System.Drawing.Point(26, 328)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(30, 13)
         Me.Label6.TabIndex = 61
@@ -161,23 +161,16 @@ Partial Class BuyTicket
         Me.txtEmpId.Size = New System.Drawing.Size(100, 20)
         Me.txtEmpId.TabIndex = 64
         '
-        'txtDate
-        '
-        Me.txtDate.Location = New System.Drawing.Point(109, 232)
-        Me.txtDate.Name = "txtDate"
-        Me.txtDate.Size = New System.Drawing.Size(100, 20)
-        Me.txtDate.TabIndex = 66
-        '
         'txtTime
         '
-        Me.txtTime.Location = New System.Drawing.Point(109, 274)
+        Me.txtTime.Location = New System.Drawing.Point(109, 247)
         Me.txtTime.Name = "txtTime"
         Me.txtTime.Size = New System.Drawing.Size(100, 20)
         Me.txtTime.TabIndex = 67
         '
         'txtGate
         '
-        Me.txtGate.Location = New System.Drawing.Point(109, 354)
+        Me.txtGate.Location = New System.Drawing.Point(109, 325)
         Me.txtGate.Name = "txtGate"
         Me.txtGate.Size = New System.Drawing.Size(100, 20)
         Me.txtGate.TabIndex = 69
@@ -196,31 +189,6 @@ Partial Class BuyTicket
         Me.txtTotPrice.Size = New System.Drawing.Size(100, 20)
         Me.txtTotPrice.TabIndex = 71
         '
-        'lblHargaTiketSatuan
-        '
-        Me.lblHargaTiketSatuan.AutoSize = True
-        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(248, 317)
-        Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
-        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(21, 13)
-        Me.lblHargaTiketSatuan.TabIndex = 72
-        Me.lblHargaTiketSatuan.Text = "Rp"
-        '
-        'cboMatch
-        '
-        Me.cboMatch.FormattingEnabled = True
-        Me.cboMatch.Location = New System.Drawing.Point(109, 169)
-        Me.cboMatch.Name = "cboMatch"
-        Me.cboMatch.Size = New System.Drawing.Size(121, 21)
-        Me.cboMatch.TabIndex = 73
-        '
-        'cboTribune
-        '
-        Me.cboTribune.FormattingEnabled = True
-        Me.cboTribune.Location = New System.Drawing.Point(109, 314)
-        Me.cboTribune.Name = "cboTribune"
-        Me.cboTribune.Size = New System.Drawing.Size(121, 21)
-        Me.cboTribune.TabIndex = 74
-        '
         'btnCheck
         '
         Me.btnCheck.Location = New System.Drawing.Point(232, 395)
@@ -232,7 +200,7 @@ Partial Class BuyTicket
         '
         'btnBuy
         '
-        Me.btnBuy.Location = New System.Drawing.Point(419, 376)
+        Me.btnBuy.Location = New System.Drawing.Point(419, 304)
         Me.btnBuy.Name = "btnBuy"
         Me.btnBuy.Size = New System.Drawing.Size(122, 61)
         Me.btnBuy.TabIndex = 76
@@ -254,35 +222,71 @@ Partial Class BuyTicket
         Me.lblSeatLeft.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSeatLeft.Location = New System.Drawing.Point(472, 157)
         Me.lblSeatLeft.Name = "lblSeatLeft"
-        Me.lblSeatLeft.Size = New System.Drawing.Size(69, 37)
+        Me.lblSeatLeft.Size = New System.Drawing.Size(0, 37)
         Me.lblSeatLeft.TabIndex = 78
-        Me.lblSeatLeft.Text = "100"
         '
-        'txtMatch
+        'cboDate
         '
-        Me.txtMatch.Location = New System.Drawing.Point(109, 196)
-        Me.txtMatch.Name = "txtMatch"
-        Me.txtMatch.Size = New System.Drawing.Size(198, 20)
-        Me.txtMatch.TabIndex = 79
+        Me.cboDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboDate.FormattingEnabled = True
+        Me.cboDate.Location = New System.Drawing.Point(109, 207)
+        Me.cboDate.Name = "cboDate"
+        Me.cboDate.Size = New System.Drawing.Size(121, 21)
+        Me.cboDate.TabIndex = 80
+        '
+        'cboMatch
+        '
+        Me.cboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMatch.FormattingEnabled = True
+        Me.cboMatch.Location = New System.Drawing.Point(109, 169)
+        Me.cboMatch.Name = "cboMatch"
+        Me.cboMatch.Size = New System.Drawing.Size(121, 21)
+        Me.cboMatch.TabIndex = 81
+        '
+        'cboTribune
+        '
+        Me.cboTribune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTribune.FormattingEnabled = True
+        Me.cboTribune.Location = New System.Drawing.Point(109, 285)
+        Me.cboTribune.Name = "cboTribune"
+        Me.cboTribune.Size = New System.Drawing.Size(121, 21)
+        Me.cboTribune.TabIndex = 82
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(245, 288)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(21, 13)
+        Me.Label10.TabIndex = 83
+        Me.Label10.Text = "Rp"
+        '
+        'lblHargaTiketSatuan
+        '
+        Me.lblHargaTiketSatuan.AutoSize = True
+        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(272, 288)
+        Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
+        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 13)
+        Me.lblHargaTiketSatuan.TabIndex = 84
         '
         'BuyTicket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(608, 470)
-        Me.Controls.Add(Me.txtMatch)
+        Me.Controls.Add(Me.lblHargaTiketSatuan)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.cboTribune)
+        Me.Controls.Add(Me.cboMatch)
+        Me.Controls.Add(Me.cboDate)
         Me.Controls.Add(Me.lblSeatLeft)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.btnBuy)
         Me.Controls.Add(Me.btnCheck)
-        Me.Controls.Add(Me.cboTribune)
-        Me.Controls.Add(Me.cboMatch)
-        Me.Controls.Add(Me.lblHargaTiketSatuan)
         Me.Controls.Add(Me.txtTotPrice)
         Me.Controls.Add(Me.txtQuantity)
         Me.Controls.Add(Me.txtGate)
         Me.Controls.Add(Me.txtTime)
-        Me.Controls.Add(Me.txtDate)
         Me.Controls.Add(Me.txtEmpId)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -314,17 +318,17 @@ Partial Class BuyTicket
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents txtEmpId As TextBox
-    Friend WithEvents txtDate As TextBox
     Friend WithEvents txtTime As TextBox
     Friend WithEvents txtGate As TextBox
     Friend WithEvents txtQuantity As TextBox
     Friend WithEvents txtTotPrice As TextBox
-    Friend WithEvents lblHargaTiketSatuan As Label
-    Friend WithEvents cboMatch As ComboBox
-    Friend WithEvents cboTribune As ComboBox
     Friend WithEvents btnCheck As Button
     Friend WithEvents btnBuy As Button
     Friend WithEvents Label9 As Label
     Friend WithEvents lblSeatLeft As Label
-    Friend WithEvents txtMatch As TextBox
+    Friend WithEvents cboDate As ComboBox
+    Friend WithEvents cboMatch As ComboBox
+    Friend WithEvents cboTribune As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents lblHargaTiketSatuan As Label
 End Class
