@@ -30,6 +30,7 @@ Partial Class Form1
         Me.TBPassword = New System.Windows.Forms.TextBox()
         Me.Login = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ID = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -91,6 +92,7 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.ID)
         Me.Panel1.Controls.Add(Me.Login)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TBPassword)
@@ -99,8 +101,16 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.TBUsername)
         Me.Panel1.Location = New System.Drawing.Point(-5, -3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(604, 306)
+        Me.Panel1.Size = New System.Drawing.Size(605, 307)
         Me.Panel1.TabIndex = 7
+        '
+        'ID
+        '
+        Me.ID.AutoSize = True
+        Me.ID.Location = New System.Drawing.Point(502, 241)
+        Me.ID.Name = "ID"
+        Me.ID.Size = New System.Drawing.Size(0, 17)
+        Me.ID.TabIndex = 7
         '
         'Form1
         '
@@ -125,4 +135,5 @@ Partial Class Form1
     Friend WithEvents TBPassword As TextBox
     Friend WithEvents Login As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents ID As Label
 End Class

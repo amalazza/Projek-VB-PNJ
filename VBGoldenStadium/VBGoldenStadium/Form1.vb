@@ -7,6 +7,7 @@ Public Class Form1
         MySqlConn.ConnectionString =
             "server=localhost;userid=root;database=goldenstadium"
 
+
         Try
             MySqlConn.Open()
             MessageBox.Show("Connection Succesful")
@@ -48,17 +49,19 @@ Public Class Form1
                 If count = 1 Then
                     Dim usertype = READER.GetString("position")
                     If usertype = "Admin" Then
+                        ID.Text = READER.GetString("empid")
                         MessageBox.Show("Login Admin Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Admin.Show()
                         Hide()
                         TBUsername.Clear()
                         TBPassword.Clear()
                     Else
+                        ID.Text = READER.GetString("empid")
                         MessageBox.Show("Login Employee Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Transaction.Show()
                         Hide()
-                        TBUsername.Clear()
-                        TBPassword.Clear()
+                        Dim OBJ As New BuyTicket
+                        OBJ.ID = ID.Text
+                        OBJ.Show()
                     End If
 
                 ElseIf count > 1 Then
@@ -77,12 +80,13 @@ Public Class Form1
 
             End Try
         End If
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
         Label3.BackColor = Color.Transparent
-
+        ID.Visible = False
     End Sub
 End Class

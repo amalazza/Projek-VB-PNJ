@@ -56,17 +56,17 @@ Partial Class BuyTicket
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(607, 108)
+        Me.Panel1.Size = New System.Drawing.Size(809, 133)
         Me.Panel1.TabIndex = 55
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(28, 25)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button4.Location = New System.Drawing.Point(37, 31)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(56, 55)
+        Me.Button4.Size = New System.Drawing.Size(75, 68)
         Me.Button4.TabIndex = 33
         Me.Button4.Text = "Back"
         Me.Button4.UseVisualStyleBackColor = True
@@ -75,134 +75,148 @@ Partial Class BuyTicket
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Lucida Sans Typewriter", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(203, 43)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(271, 53)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(207, 37)
+        Me.Label11.Size = New System.Drawing.Size(260, 45)
         Me.Label11.TabIndex = 27
         Me.Label11.Text = "BUY TICKET"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 134)
+        Me.Label1.Location = New System.Drawing.Point(36, 165)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(54, 17)
         Me.Label1.TabIndex = 56
         Me.Label1.Text = "EMP ID"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(26, 172)
+        Me.Label2.Location = New System.Drawing.Point(35, 212)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.Size = New System.Drawing.Size(46, 17)
         Me.Label2.TabIndex = 57
         Me.Label2.Text = "Match"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 210)
+        Me.Label3.Location = New System.Drawing.Point(35, 258)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
+        Me.Label3.Size = New System.Drawing.Size(38, 17)
         Me.Label3.TabIndex = 58
         Me.Label3.Text = "Date"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 250)
+        Me.Label4.Location = New System.Drawing.Point(35, 308)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.Size = New System.Drawing.Size(39, 17)
         Me.Label4.TabIndex = 59
         Me.Label4.Text = "Time"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(27, 288)
+        Me.Label5.Location = New System.Drawing.Point(36, 354)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 13)
+        Me.Label5.Size = New System.Drawing.Size(57, 17)
         Me.Label5.TabIndex = 60
         Me.Label5.Text = "Tribune"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 328)
+        Me.Label6.Location = New System.Drawing.Point(35, 404)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 13)
+        Me.Label6.Size = New System.Drawing.Size(39, 17)
         Me.Label6.TabIndex = 61
         Me.Label6.Text = "Gate"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(27, 400)
+        Me.Label7.Location = New System.Drawing.Point(36, 492)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 13)
+        Me.Label7.Size = New System.Drawing.Size(61, 17)
         Me.Label7.TabIndex = 62
         Me.Label7.Text = "Quantity"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(27, 441)
+        Me.Label8.Location = New System.Drawing.Point(36, 543)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.Size = New System.Drawing.Size(76, 17)
         Me.Label8.TabIndex = 63
         Me.Label8.Text = "Total Price"
         '
         'txtEmpId
         '
-        Me.txtEmpId.Location = New System.Drawing.Point(109, 131)
+        Me.txtEmpId.Location = New System.Drawing.Point(145, 161)
+        Me.txtEmpId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEmpId.Name = "txtEmpId"
-        Me.txtEmpId.Size = New System.Drawing.Size(100, 20)
+        Me.txtEmpId.Size = New System.Drawing.Size(132, 22)
         Me.txtEmpId.TabIndex = 64
         '
         'txtTime
         '
-        Me.txtTime.Location = New System.Drawing.Point(109, 247)
+        Me.txtTime.Location = New System.Drawing.Point(145, 304)
+        Me.txtTime.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTime.Name = "txtTime"
-        Me.txtTime.Size = New System.Drawing.Size(100, 20)
+        Me.txtTime.Size = New System.Drawing.Size(132, 22)
         Me.txtTime.TabIndex = 67
         '
         'txtGate
         '
-        Me.txtGate.Location = New System.Drawing.Point(109, 325)
+        Me.txtGate.Location = New System.Drawing.Point(145, 400)
+        Me.txtGate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtGate.Name = "txtGate"
-        Me.txtGate.Size = New System.Drawing.Size(100, 20)
+        Me.txtGate.Size = New System.Drawing.Size(132, 22)
         Me.txtGate.TabIndex = 69
         '
         'txtQuantity
         '
-        Me.txtQuantity.Location = New System.Drawing.Point(109, 397)
+        Me.txtQuantity.Location = New System.Drawing.Point(145, 489)
+        Me.txtQuantity.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtQuantity.Name = "txtQuantity"
-        Me.txtQuantity.Size = New System.Drawing.Size(100, 20)
+        Me.txtQuantity.Size = New System.Drawing.Size(132, 22)
         Me.txtQuantity.TabIndex = 70
         '
         'txtTotPrice
         '
-        Me.txtTotPrice.Location = New System.Drawing.Point(109, 438)
+        Me.txtTotPrice.Location = New System.Drawing.Point(145, 539)
+        Me.txtTotPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTotPrice.Name = "txtTotPrice"
-        Me.txtTotPrice.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotPrice.Size = New System.Drawing.Size(132, 22)
         Me.txtTotPrice.TabIndex = 71
         '
         'btnCheck
         '
-        Me.btnCheck.Location = New System.Drawing.Point(232, 395)
+        Me.btnCheck.Location = New System.Drawing.Point(309, 486)
+        Me.btnCheck.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCheck.Name = "btnCheck"
-        Me.btnCheck.Size = New System.Drawing.Size(75, 23)
+        Me.btnCheck.Size = New System.Drawing.Size(100, 28)
         Me.btnCheck.TabIndex = 75
         Me.btnCheck.Text = "Check"
         Me.btnCheck.UseVisualStyleBackColor = True
         '
         'btnBuy
         '
-        Me.btnBuy.Location = New System.Drawing.Point(419, 304)
+        Me.btnBuy.Location = New System.Drawing.Point(559, 374)
+        Me.btnBuy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnBuy.Name = "btnBuy"
-        Me.btnBuy.Size = New System.Drawing.Size(122, 61)
+        Me.btnBuy.Size = New System.Drawing.Size(163, 75)
         Me.btnBuy.TabIndex = 76
         Me.btnBuy.Text = "Buy"
         Me.btnBuy.UseVisualStyleBackColor = True
@@ -210,9 +224,10 @@ Partial Class BuyTicket
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(416, 172)
+        Me.Label9.Location = New System.Drawing.Point(555, 212)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.Size = New System.Drawing.Size(65, 17)
         Me.Label9.TabIndex = 77
         Me.Label9.Text = "Seat Left"
         '
@@ -220,60 +235,66 @@ Partial Class BuyTicket
         '
         Me.lblSeatLeft.AutoSize = True
         Me.lblSeatLeft.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSeatLeft.Location = New System.Drawing.Point(472, 157)
+        Me.lblSeatLeft.Location = New System.Drawing.Point(629, 193)
+        Me.lblSeatLeft.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSeatLeft.Name = "lblSeatLeft"
-        Me.lblSeatLeft.Size = New System.Drawing.Size(0, 37)
+        Me.lblSeatLeft.Size = New System.Drawing.Size(0, 46)
         Me.lblSeatLeft.TabIndex = 78
         '
         'cboDate
         '
         Me.cboDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboDate.FormattingEnabled = True
-        Me.cboDate.Location = New System.Drawing.Point(109, 207)
+        Me.cboDate.Location = New System.Drawing.Point(145, 255)
+        Me.cboDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboDate.Name = "cboDate"
-        Me.cboDate.Size = New System.Drawing.Size(121, 21)
+        Me.cboDate.Size = New System.Drawing.Size(160, 24)
         Me.cboDate.TabIndex = 80
         '
         'cboMatch
         '
         Me.cboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMatch.FormattingEnabled = True
-        Me.cboMatch.Location = New System.Drawing.Point(109, 169)
+        Me.cboMatch.Location = New System.Drawing.Point(145, 208)
+        Me.cboMatch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboMatch.Name = "cboMatch"
-        Me.cboMatch.Size = New System.Drawing.Size(121, 21)
+        Me.cboMatch.Size = New System.Drawing.Size(160, 24)
         Me.cboMatch.TabIndex = 81
         '
         'cboTribune
         '
         Me.cboTribune.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTribune.FormattingEnabled = True
-        Me.cboTribune.Location = New System.Drawing.Point(109, 285)
+        Me.cboTribune.Location = New System.Drawing.Point(145, 351)
+        Me.cboTribune.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboTribune.Name = "cboTribune"
-        Me.cboTribune.Size = New System.Drawing.Size(121, 21)
+        Me.cboTribune.Size = New System.Drawing.Size(160, 24)
         Me.cboTribune.TabIndex = 82
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(245, 288)
+        Me.Label10.Location = New System.Drawing.Point(327, 354)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(21, 13)
+        Me.Label10.Size = New System.Drawing.Size(26, 17)
         Me.Label10.TabIndex = 83
         Me.Label10.Text = "Rp"
         '
         'lblHargaTiketSatuan
         '
         Me.lblHargaTiketSatuan.AutoSize = True
-        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(272, 288)
+        Me.lblHargaTiketSatuan.Location = New System.Drawing.Point(363, 354)
+        Me.lblHargaTiketSatuan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblHargaTiketSatuan.Name = "lblHargaTiketSatuan"
-        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 13)
+        Me.lblHargaTiketSatuan.Size = New System.Drawing.Size(0, 17)
         Me.lblHargaTiketSatuan.TabIndex = 84
         '
         'BuyTicket
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(608, 470)
+        Me.ClientSize = New System.Drawing.Size(811, 578)
         Me.Controls.Add(Me.lblHargaTiketSatuan)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.cboTribune)
@@ -297,6 +318,7 @@ Partial Class BuyTicket
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "BuyTicket"
         Me.Text = "BuyTicket"
         Me.Panel1.ResumeLayout(False)

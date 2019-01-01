@@ -11,11 +11,12 @@ Public Class BuyTicket
     Dim seatleft As Integer
     Public totprice As String
     Public empid As String
+    Public Property ID As String
     Private Sub BuyTicket_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtTime.Enabled = False
         txtGate.Enabled = False
         txtTotPrice.Enabled = False
-
+        txtEmpId.Text = ID
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString =
         "server=localhost;userid=root;database=goldenstadium"
@@ -23,13 +24,14 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select matchh from goldenstadium.match"
+            str = "select matchh from goldenstadium.matchhh"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
                 Do While reader.Read
                     cboMatch.Items.Add(reader("matchh"))
                 Loop
+                txtEmpId.Text = ID
             Else
             End If
             MySqlConn.Close()
@@ -59,7 +61,7 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select datee from goldenstadium.match where matchh = '" & match & "'"
+            str = "select datee from goldenstadium.matchhh where matchh = '" & match & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -96,7 +98,7 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "'"
+            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -129,7 +131,7 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
+            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -159,7 +161,7 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select * from goldenstadium.match inner join goldenstadium.seat on goldenstadium.match.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
+            str = "select * from goldenstadium.matchhh inner join goldenstadium.seat on goldenstadium.matchhh.matchid = goldenstadium.seat.matchid where matchh = '" & match & "' and datee = '" & matchdate & "' and tribune_name = '" & tribune & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -200,7 +202,7 @@ Public Class BuyTicket
         Try
             MySqlConn.Open()
             Dim str As String
-            str = "select matchid from goldenstadium.match where matchh = '" & match & "' and datee = '" & matchdate & "'"
+            str = "select matchid from goldenstadium.matchhh where matchh = '" & match & "' and datee = '" & matchdate & "'"
             cmd = New MySqlCommand(str, MySqlConn)
             reader = cmd.ExecuteReader
             If reader.HasRows Then
@@ -258,5 +260,10 @@ Public Class BuyTicket
                 MySqlConn.Dispose()
             End Try
         End If
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Hide()
+        Form1.Show()
     End Sub
 End Class
