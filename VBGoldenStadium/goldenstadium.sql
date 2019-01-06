@@ -111,7 +111,7 @@ CREATE TABLE `transac` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `transac`
+-- Dumping data for table `transacc`
 --
 
 INSERT INTO `transac` (`transacid`, `empid`, `matchid`, `total_price`, `quantity`) VALUES
